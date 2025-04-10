@@ -7,7 +7,7 @@ genai_client = genai.Client(api_key="AIzaSyDOisJFtcZNIfGQPGQ1XiCO_uJ6i4TretI")
 
 # Groq models
 from groq import Groq
-groq_client = Groq(api_key="'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")
+groq_client = Groq(api_key="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")
 
 app = Flask(__name__)
 CORS(app)
