@@ -3,7 +3,7 @@ from flask_cors import CORS
 
 # Google Gemini
 from google import genai
-genai_client = genai.Client(api_key="AIzaSyDOisJFtcZNIfGQPGQ1XiCO_uJ6i4TretI")
+genai_client = genai.Client(api_key="AIzaSyDffTcmmCQB4mP3gQPoYql5tHUv-CRvmW8")
 
 # Groq models
 from groq import Groq
@@ -25,7 +25,7 @@ def gemini():
         return error_response, status
     try:
         response = genai_client.models.generate_content(
-            model="gemini-2.0-flash",
+            model="gemini-2.5-flash",
             contents=[prompt]
         )
         return jsonify({'response': response.text})
@@ -88,3 +88,4 @@ def llama4():
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
+
