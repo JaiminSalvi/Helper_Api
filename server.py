@@ -7,7 +7,7 @@ genai_client = genai.Client(api_key="AIzaSyDffTcmmCQB4mP3gQPoYql5tHUv-CRvmW8")
 
 # Groq models
 from groq import Groq
-groq_client = Groq(api_key="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")
+groq_client = Groq(api_key="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")
 
 app = Flask(__name__)
 CORS(app)
@@ -88,4 +88,5 @@ def llama4():
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
+
 
